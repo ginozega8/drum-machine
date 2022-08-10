@@ -7,7 +7,70 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(21, 20, 20);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.drumpad-container {
+  margin-top: 23vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.drum-pad {
+width: 100px;
+height: 100px;
+border: solid 1px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+background-color: rgb(59, 42, 145);
+color: white;
+transition: all 0.3s;
+}
+
+.drum-pad:hover {
+  background-color: rgb(195, 230, 19) !important;
+}
+
+.controls {
+text-align: center;
+color: white;
+}
+
+.vol-bar {
+  width: 60%;
+  margin-left: 10px;
+  margin-top: 20px;
+  color: bisque;
+}
+
+.controls button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background-color: rgb(59, 42, 145);
+  color: white;
+  transform: scale(1.1);
+  border: none;
 }
