@@ -128,8 +128,8 @@ function Drumpad() {
     const audio = document.getElementById(selector); //Get the id / key pressed
     audio.volume = range / 100; //Change the volume
     setCurrentId(id) //Set name of the currently pressed sound
+    audio.currentTime = 0;
     audio.play(); // Play the audio
-
   }
 
 
